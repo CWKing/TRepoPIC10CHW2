@@ -19,9 +19,10 @@ public:
 
 signals:
     void compute_overall();
+    void custom_value_changed(int, int);
 
 public slots:
-    void update_overall(int);
+    void update_overall();
     void update_hw_score(int, int);
     void update_mt_score(int, int);
     void update_final_score(int);
@@ -33,5 +34,6 @@ private:
     int final_score[2] = {2,0};
     int grades[2] = {0};
 };
+
 
 #endif // HW2_H
