@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>594</width>
-    <height>493</height>
+    <width>603</width>
+    <height>485</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>603</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>603</width>
+    <height>485</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>hw2</string>
@@ -29,6 +41,8 @@
     <property name="font">
      <font>
       <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="cursor">
@@ -56,6 +70,8 @@
     <property name="font">
      <font>
       <family>Verdana</family>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="cursor">
@@ -317,6 +333,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="frameShape">
@@ -335,6 +353,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -350,6 +370,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -365,6 +387,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -380,6 +404,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -395,6 +421,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -410,6 +438,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -425,6 +455,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -440,10 +472,10 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>451</x>
-      <y>50</y>
-      <width>64</width>
-      <height>231</height>
+      <x>450</x>
+      <y>30</y>
+      <width>74</width>
+      <height>247</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -452,6 +484,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="layoutDirection">
@@ -483,6 +517,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -511,6 +547,8 @@
        <property name="font">
         <font>
          <family>Verdana</family>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -539,7 +577,7 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>530</x>
       <y>60</y>
       <width>66</width>
       <height>221</height>
@@ -578,6 +616,12 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Your overall score percential</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
     <property name="digitCount">
      <number>3</number>
     </property>
@@ -610,7 +654,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>594</width>
+     <width>603</width>
      <height>21</height>
     </rect>
    </property>

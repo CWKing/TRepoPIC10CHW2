@@ -15,35 +15,35 @@ hw2::hw2(QWidget *parent) :
     QObject::connect(ui->HW1Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
                      [&](int val){update_hw_score(val, 1); });
 
-    QObject::connect(ui->HW2Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 2)));
+    QObject::connect(ui->HW2Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 2); });
 
-    QObject::connect(ui->HW3Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 3)));
+    QObject::connect(ui->HW3Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 3); });
 
-    QObject::connect(ui->HW4Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 4)));
+    QObject::connect(ui->HW4Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 4); });
 
-    QObject::connect(ui->HW5Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 5)));
+    QObject::connect(ui->HW5Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 5); });
 
-    QObject::connect(ui->HW6Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 6)));
+    QObject::connect(ui->HW6Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 6); });
 
-    QObject::connect(ui->HW7Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 7)));
+    QObject::connect(ui->HW7Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 7); });
 
-    QObject::connect(ui->HW8Slider,SIGNAL(valueChanged(int)),
-        this,SLOT(update_hw_score(int, 8)));
+    QObject::connect(ui->HW8Slider,static_cast<void (QSlider::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_hw_score(val, 8); });
 
-    QObject::connect(ui->MT1Dial,SIGNAL(valueChanged(int)),
-        this,SLOT(update_mt_score(int, 1)));
+    QObject::connect(ui->MT1Dial,static_cast<void (QDial::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_mt_score(val, 1); });
 
-    QObject::connect(ui->MT2Dial,SIGNAL(valueChanged(int)),
-        this,SLOT(update_mt_score(int, 2)));
+    QObject::connect(ui->MT2Dial,static_cast<void (QDial::*)(int)>(&QSlider::valueChanged),
+                     [&](int val){update_mt_score(val, 2); });
 
     QObject::connect(ui->FEDial,SIGNAL(valueChanged(int)),
-        this,SLOT(update_final_score(int)));
+        this,SLOT(update_final_score(int)));                //This is the only one that doesn't require a lambda expression!
 
     QObject::connect(ui->CalculateButton,SIGNAL(clicked()),
     this,SLOT(update_overall()));
